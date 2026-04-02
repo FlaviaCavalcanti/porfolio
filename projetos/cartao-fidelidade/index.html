@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 
 <html class="dark" lang="pt-BR"><head>
@@ -52,7 +50,7 @@
 </header>
 <div class="w-full bg-white/5 dark:bg-primary/10 border border-white/10 dark:border-primary/20 rounded-xl p-8 flex flex-col items-center gap-6 shadow-2xl">
 <div class="relative p-4 bg-white rounded-xl shadow-inner">
-<div class="w-48 h-48" id="qrcode" title="QR Code do cartão fidelidade"></div>
+<div class="w-48 h-48" id="qrcode"></div>
 </div>
 <p class="text-slate-400 text-sm font-medium text-center px-4">
                 Apresente o QR Code no caixa para ganhar selos
@@ -106,10 +104,10 @@
 </div>
 </div>
 <script>
-        const dadosCartao = "FIDELIDADE|LOJA:MINHA_LOJA|CLIENTE:0001|SELOS:6|OBJETIVO:10";
+        const textoQr = "projeto da Mayara, em breve com acesso real de QR Code";
 
         new QRCode(document.getElementById("qrcode"), {
-            text: dadosCartao,
+            text: textoQr,
             width: 192,
             height: 192,
             colorDark: "#000000",
