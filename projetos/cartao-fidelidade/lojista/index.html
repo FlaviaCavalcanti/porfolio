@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="dark" lang="pt-BR"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Gerenciador de Fidelidade</title>
@@ -15,7 +15,7 @@
                 extend: {
                     colors: {
                         "primary": "#4f0ea0",
-                        "background-light": "#f6f8f6",
+                        "background-light": "#f7f6f8",
                         "background-dark": "#181022",
                     },
                     fontFamily: {
@@ -43,7 +43,7 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
 <div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden pb-20">
 <!-- Header -->
-<div class="sticky top-0 z-50 flex items-center justify-between bg-white dark:bg-[#1a2e1a] px-4 py-3 shadow-sm border-b border-slate-100 dark:border-slate-800">
+<div class="sticky top-0 z-50 flex items-center justify-between bg-white dark:bg-background-dark px-4 py-3 shadow-sm border-b border-slate-100 dark:border-primary/20">
 <div class="flex items-center gap-3">
 <div class="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
 <span class="material-symbols-outlined">storefront</span>
@@ -55,12 +55,12 @@
 </div>
 <button class="flex h-10 w-10 items-center justify-center rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors relative">
 <span class="material-symbols-outlined">notifications</span>
-<span class="absolute top-2 right-2 h-2.5 w-2.5 rounded-full bg-red-500 border-2 border-white dark:border-[#1a2e1a]"></span>
+<span class="absolute top-2 right-2 h-2.5 w-2.5 rounded-full bg-red-500 border-2 border-white dark:border-background-dark"></span>
 </button>
 </div>
 <main class="flex-1 px-4 py-6 space-y-6">
 <!-- Quick Action / Scan -->
-<div class="rounded-xl bg-white dark:bg-[#1a2e1a] p-6 shadow-sm border border-slate-100 dark:border-slate-800 text-center relative overflow-hidden group">
+<div class="rounded-xl bg-white dark:bg-primary/10 p-6 shadow-sm border border-slate-100 dark:border-primary/20 text-center relative overflow-hidden group">
 <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent opacity-50"></div>
 <div class="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary dark:bg-primary/20">
 <span class="material-symbols-outlined text-4xl">qr_code_scanner</span>
@@ -73,8 +73,8 @@
                 </button>
 </div>
 <!-- Manual Entry Tabs -->
-<div class="rounded-xl bg-white dark:bg-[#1a2e1a] shadow-sm border border-slate-100 dark:border-slate-800 overflow-hidden">
-<div class="flex border-b border-slate-100 dark:border-slate-800">
+<div class="rounded-xl bg-white dark:bg-primary/10 shadow-sm border border-slate-100 dark:border-primary/20 overflow-hidden">
+<div class="flex border-b border-slate-100 dark:border-primary/20">
 <button class="flex-1 py-3 text-sm font-semibold text-primary border-b-2 border-primary bg-primary/5">Manual Check-in</button>
 <button class="flex-1 py-3 text-sm font-medium text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200">Registrar Novo</button>
 </div>
@@ -99,7 +99,7 @@
 </div>
 <div class="space-y-3">
 <!-- Item 1 -->
-<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-[#1a2e1a] p-4 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-primary/10 p-4 shadow-sm border border-slate-100 dark:border-primary/20">
 <div class="relative h-12 w-12 flex-none rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
 <img alt="Portrait of a smiling woman" class="h-full w-full object-cover" data-alt="Portrait of Sarah Jenkins" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqAgUJN7L7dulp4KnQGsUK9BBNzRU38V9D-CFyZJEQhnUarlAjBvk7bcjiMFEniX6lNFOMCAEhxNbKqrwKlGF-GZM8FnLk9jYQijf1skeHiXxPYS8hAcRv5ELnXTm_auQNjy2c-SwrrV2rla7CIK_Bu9P56i8qsPQc3MbwdZyNjfGRA-2krjXSeBhkR8sggyD7y9sVD0JH46QOSOlmim_Vc9VzHdPQnNE5pzzUJzNJ2idgQbUpy-By92V2u8MerFUOJgiIv4tQ3o_P"/>
 </div>
@@ -120,7 +120,7 @@
 </div>
 </div>
 <!-- Item 2 -->
-<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-[#1a2e1a] p-4 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-primary/10 p-4 shadow-sm border border-slate-100 dark:border-primary/20">
 <div class="relative h-12 w-12 flex-none rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
 <img alt="Portrait of a man with glasses" class="h-full w-full object-cover" data-alt="Portrait of Michael Chen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMxmOWtnSb5u4bG34yNk6si4YGvGwQfS0MTLFiIgxj-JlFvj05wSXs3Me8BXJnjo3eR2zhdjgRjvYiAJ499PzS6UN4_Mgbfi9bcs0JVqo4mcuWdTc0agsURSenG4mRvhbeQUt9ucd2fNUwhPPOHX10N4ohFD5G7NC7pRrmxTnzksj4iKADVuk4nouwDyqT22epdpn9YIrUctLe2e5rxUA7P3FTTWf0Tdyl2i2jsENnT-wLdpDI5W6nnoJXRQSYpQXF1i3dFPuBKlnP"/>
 </div>
@@ -141,7 +141,7 @@
 </div>
 </div>
 <!-- Item 3: Reward Redeemed -->
-<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-[#1a2e1a] p-4 shadow-sm border border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-4 rounded-xl bg-white dark:bg-primary/10 p-4 shadow-sm border border-slate-100 dark:border-primary/20">
 <div class="relative h-12 w-12 flex-none rounded-full bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-500 flex items-center justify-center">
 <span class="material-symbols-outlined fill">redeem</span>
 </div>
@@ -157,18 +157,18 @@
 </div>
 <!-- Stats Overview -->
 <div class="grid grid-cols-2 gap-3">
-<div class="rounded-xl bg-white dark:bg-[#1a2e1a] p-4 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center text-center">
+<div class="rounded-xl bg-white dark:bg-primary/10 p-4 shadow-sm border border-slate-100 dark:border-primary/20 flex flex-col items-center justify-center text-center">
 <span class="text-3xl font-bold text-slate-900 dark:text-white">24</span>
 <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Check-ins Hoje</span>
 </div>
-<div class="rounded-xl bg-white dark:bg-[#1a2e1a] p-4 shadow-sm border border-slate-100 dark:border-slate-800 flex flex-col items-center justify-center text-center">
+<div class="rounded-xl bg-white dark:bg-primary/10 p-4 shadow-sm border border-slate-100 dark:border-primary/20 flex flex-col items-center justify-center text-center">
 <span class="text-3xl font-bold text-slate-900 dark:text-white">3</span>
 <span class="text-xs text-slate-500 dark:text-slate-400 font-medium">Novos usuários</span>
 </div>
 </div>
 </main>
 <!-- Bottom Navigation -->
-<div class="fixed bottom-0 left-0 right-0 z-50 flex border-t border-slate-100 dark:border-slate-800 bg-white dark:bg-[#1a2e1a] px-4 pb-safe pt-2">
+<div class="fixed bottom-0 left-0 right-0 z-50 flex border-t border-slate-100 dark:border-primary/20 bg-white dark:bg-background-dark px-4 pb-safe pt-2">
 <a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-lg py-2 text-slate-900 dark:text-white" href="#">
 <div class="flex h-6 items-center justify-center text-primary">
 <span class="material-symbols-outlined fill">dashboard</span>
